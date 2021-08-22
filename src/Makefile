@@ -34,15 +34,15 @@ kegsmac: $(OBJECTS) compile_time.o $(SWIFTOBJS)
 	mkdir -p ../KEGSMAC.app/Contents/Resources/Base.lproj/
 	mkdir -p ../KEGSMAC.app/Contents/MacOS
 	mkdir -p ../KEGSMAC.app/Contents/Frameworks
-	PERL cp_kegs_libs kegsmac /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx ../KEGSMAC.app/Contents/Frameworks
+	PERL cp_kegs_libs kegsmac /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift-5.0/macosx ../KEGSMAC.app/Contents/Frameworks
 	mv kegsmac ../KEGSMAC.app/Contents/MacOS/KEGSMAC
 	echo "APPL????" > ../KEGSMAC.app/Contents/PkgInfo
 	cp -f Info.plist ../KEGSMAC.app/Contents/
 	cp -f $(PROJROOT)/lib/MainMenu.nib ../KEGSMAC.app/Contents/Resources/Base.lproj/
-	#cp -f $(PROJROOT)/lib/kegsicon.icns ../KEGSMAC.app/Contents/Resources/
-	#cp -f $(PROJROOT)/lib/2mg.icns ../KEGSMAC.app/Contents/Resources/
-	#cp -f $(PROJROOT)/lib/525.icns ../KEGSMAC.app/Contents/Resources/
-	#touch '../KEGSMAC.app/Icon?'
+	cp -f $(PROJROOT)/lib/kegsicon.icns ../KEGSMAC.app/Contents/Resources/
+	cp -f $(PROJROOT)/lib/2mg.icns ../KEGSMAC.app/Contents/Resources/
+	cp -f $(PROJROOT)/lib/525.icns ../KEGSMAC.app/Contents/Resources/
+	touch '../KEGSMAC.app/Icon?'
 
 # Linux for X builds:
 xkegs: $(OBJECTS) compile_time.o
