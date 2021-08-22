@@ -7,6 +7,7 @@ This modified version is an attempt to clean up the main UI
 
 ## Changes
 remove all status text in the box below the main GSOS window
+
 add missing icon to application
 
 ## To do
