@@ -2443,7 +2443,7 @@ video_update_color_raw(int col_num, int a2_color)
 void
 video_update_status_line(int line, const char *string)
 {
-	byte	a2_str_buf[STATUS_LINE_LENGTH+1];
+/*	byte	a2_str_buf[STATUS_LINE_LENGTH+1];
 	word32	*wptr;
 	char	*buf;
 	const char *ptr;
@@ -2479,7 +2479,7 @@ video_update_status_line(int line, const char *string)
 		redraw_changed_string(&(a2_str_buf[0]), start_line + i, -1L,
 			wptr, 0, 0x00ffffff, pixels_per_line, 1);
 	}
-	video_add_a2_rect(start_line, start_line + 8, 0, 640);
+	video_add_a2_rect(start_line, start_line + 8, 0, 640); */
 }
 
 void
