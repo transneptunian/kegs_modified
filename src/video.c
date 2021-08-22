@@ -473,7 +473,7 @@ video_init(int mdepth)
 	}
 
 	video_init_kimage(&g_mainwin_kimage, X_A2_WINDOW_WIDTH,
-					X_A2_WINDOW_HEIGHT + 7*16 + 16);
+					X_A2_WINDOW_HEIGHT);
 
 	video_init_kimage(&g_debugwin_kimage, 80*8 + 8 + 8, 25*16 + 8 + 8);
 
