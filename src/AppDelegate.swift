@@ -1,5 +1,7 @@
-// $KmKId: AppDelegate.swift,v 1.16 2021-01-24 05:36:13+00 kentd Exp $
-// Copyright 2019-2020 by Kent Dickey
+// $KmKId: AppDelegate.swift,v 1.18 2021-09-19 04:49:13+00 kentd Exp $
+//	Copyright 2019-2021 by Kent Dickey
+//	This code is covered by the GNU GPL v3
+//	See the file COPYING.txt or https://www.gnu.org/licenses/
 //
 // /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/
 //  Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreAudio.framework/
