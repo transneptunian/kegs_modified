@@ -18,5 +18,12 @@ add missing icon to application
 ![cropped](https://user-images.githubusercontent.com/46327171/130364348-b616c1e7-acbd-4786-8588-c75ce2b435db.png)
 
 
+## Actual Changes
 
+These are changes to the source to remove the bottom status.
 
+video.c : Remove everything between the { } of this function
+>video_update_status_line(int line, const char *string)
+
+video.c : Remove this math statement from the end of this call + 7*16 + 16
+>video_init_kimage(&g_mainwin_kimage, X_A2_WINDOW_WIDTH, X_A2_WINDOW_HEIGHT + 7*16 + 16);
