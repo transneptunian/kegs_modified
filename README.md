@@ -27,3 +27,13 @@ video.c : Remove everything between the { } of this function
 
 video.c : Remove this math statement from the end of this call + 7*16 + 16
 >video_init_kimage(&g_mainwin_kimage, X_A2_WINDOW_WIDTH, X_A2_WINDOW_HEIGHT + 7*16 + 16);
+
+## A note about compiling
+
+Depending on your OS version, the PERL statement in Makefile may fail. For my 32bit iMac, the line remains as the original. For my 64 bit system, 'swift' becomes 'swift-5.0'
+
+>PERL cp_kegs_libs kegsmac /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift
+
+or
+
+>PERL cp_kegs_libs kegsmac /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift-5.0
