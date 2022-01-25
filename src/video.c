@@ -2552,9 +2552,9 @@ video_update_color_raw(int bank, int col_num, int a2_color)
 }
 
 void
-video_update_status_line(int line, const char *string) /*
+video_update_status_line(int line, const char *string)
 {
-	byte	a2_str_buf[STATUS_LINE_LENGTH+1];
+/*	byte	a2_str_buf[STATUS_LINE_LENGTH+1];
 	word32	*wptr;
 	char	*buf;
 	const char *ptr;
