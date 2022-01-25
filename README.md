@@ -1,3 +1,6 @@
+# KEGS 1.16 has now offically added a toggle to hide the status screen. Only took 20 years! My work here is finished.
+
+
 # kegs_modified
 Kent's Emulated GS with changes to remove status window updates. macOS is the targetted platform.
 
